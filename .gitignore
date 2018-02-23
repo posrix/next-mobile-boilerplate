@@ -1,0 +1,4 @@
+node_modules/
+.next/
+utils/assets.manifest.json
+package-lock.json
