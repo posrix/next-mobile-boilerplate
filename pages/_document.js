@@ -11,7 +11,7 @@ export default class extends Document {
           <link
             rel="shortcut icon"
             type="image/x-icon"
-            href="/static/favicon.ico"
+            href="/static/images/favicon.ico"
           />
           <meta
             name="viewport"
