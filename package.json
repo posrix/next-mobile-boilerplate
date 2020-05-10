@@ -14,14 +14,17 @@
     "lint": "eslint --ext .js pages components services",
     "lint:fix": "eslint --fix --ext .js pages components services",
     "lint-staged:eslint": "eslint --quiet --format node_modules/eslint-friendly-formatter",
-    "lint-staged:prettier": "prettier --config .prettierrc --write"
+    "lint-staged:prettier": "prettier --config .prettierrc --write",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "dependencies": {
     "antd-mobile": "^2.1.3",
     "isomorphic-unfetch": "^2.0.0",
     "next": "latest",
     "react": "^16.2.0",
-    "react-dom": "^16.2.0"
+    "react-dom": "^16.2.0",
+    "snyk": "^1.319.2"
   },
   "devDependencies": {
     "babel-eslint": "^8.2.1",
@@ -47,5 +50,6 @@
         "git add"
       ]
     }
-  }
+  },
+  "snyk": true
 }
